@@ -15,57 +15,46 @@ public class EjercicioJava {
             case 1:
             System.out.println("Escribe el Id de un Futbolista");
             int id = entrada.nextInt();
-            entrada.next();
             System.out.println("Escribe el nombre del Futbolista");
-            String nombre = entrada.nextLine();
-            entrada.nextLine();
+            String nombre = entrada.next();
             System.out.println("Escribe el apellido del Futbolista");
-            String apellido = entrada.nextLine();
-            entrada.nextLine();
+            String apellido = entrada.next();
             System.out.println("Escribe la edad del Futbolista");
             int edad = entrada.nextInt();
-            entrada.nextLine();
             System.out.println("Escribe el dorsal del Futbolista");
-            String dorsal = entrada.nextLine();
-            entrada.nextLine();
+            String dorsal = entrada.next();
             System.out.println("Escribe la marcación del Futbolista");
-            String demarcacion = entrada.nextLine();
+            String demarcacion = entrada.next();
             Futbolista = new Futbolista(id, nombre, apellido, edad, dorsal, demarcacion);
             break;
 
             case 2:
             System.out.println("Escribe el Id de un Entrenador");
             id = entrada.nextInt();
-            entrada.nextLine();
             System.out.println("Escribe el nombre de un entrenador");
-            nombre = entrada.nextLine();
-            entrada.nextLine();
+            nombre = entrada.next();
             System.out.println("Escribe el apellido del entrenado");
-            apellido = entrada.nextLine();
-            entrada.nextLine();
+            apellido = entrada.next();
             System.out.println("Escribe la edad del entrenador");
             edad = entrada.nextInt();
-            entrada.nextLine();
             System.out.println("Escribe el Id de la federación");
-            String idFederacion = entrada.nextLine();
+            String idFederacion = entrada.next();
             Futbolista = new Entrenador(id, nombre, apellido, edad, idFederacion);
             break;
 
             case 3:
             System.out.println("Escribe el Id de una masajista");
             id = entrada.nextInt();
-            entrada.nextLine();
             System.out.println("Escribe el nombre de la masajista");
-            nombre = entrada.nextLine();
+            nombre = entrada.next();
             System.out.println("Escribe el apellido de la masajista");
-            apellido = entrada.nextLine();
+            apellido = entrada.next();
             System.out.println("Escribe la edad de la masajista");
             edad = entrada.nextInt();
-            entrada.nextLine();
             System.out.println("Escribe la titulación de la masajista");
-            String titulacion = entrada.nextLine();
+            String titulacion = entrada.next();
             System.out.println("Escribe los años de experiencia de la masajista");
-            String aniosExperiencia = entrada.nextLine();
+            String aniosExperiencia = entrada.next();
 
             Futbolista = new Masajista(id, nombre, apellido, edad, titulacion, aniosExperiencia);
             break;
@@ -182,7 +171,7 @@ class Masajista extends Padre{
     }
     @Override
     public void Viajar(){
-        System.out.println("Soy la masajista del equipo");
+        System.out.println("Soy la masajista del equipo y viajo junto con el equipo");
     }
     public void darMasaje(){
         System.out.println("Soy la masajista del equipo");
